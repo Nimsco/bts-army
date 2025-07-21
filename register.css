@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* variables */
+:root
+{
+    --theme-color: #6D32A4;
+    --link_hover: #8e63b7;
+    --button_color: #AE41B2;
+    --title_font-size: 3rem
+}
+
+
+html
+{
+    font-size: 62.5%;
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "Poppins", sans-serif;
+}
+
+main
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(126, 88, 232),rgb(65, 59, 79));
+    color: white;
+}
+
+.reg-container
+{
+    width: 40%;
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+.reg-header
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reg-header h1
+{
+    font-weight: 600;
+    font-size: 4rem;
+    letter-spacing: 1.5px;
+}
+
+.reg-header p
+{
+    font-size: 1.7rem;
+}
+
+.reg-form
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    font-size: 1.8rem;
+    padding: 2rem;
+    font-weight: 500;
+}
+
+.reg-label label
+{
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.reg-label
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-label input
+{
+    width: 80%;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 0.8rem;
+    outline: none;
+    height: 3.5rem;
+    color: black;
+}
+
+.reg-label select
+{
+    color: black;
+    width: 30%;
+    border-radius: 5px;
+    outline: none;
+    height: 3rem;
+    padding-left: 0.8rem;
+}
+
+.submit-button
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.submit-button button
+{
+    background-color: var(--button_color);
+    padding: 0.8rem 3rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.submit-button button:hover
+{
+    color: black;
+    background-color: white;
+}
+
+.submit-button p
+{
+    font-size: 1.7rem;
+}
+
+.submit-button a
+{
+    color: white;
+}
+
+.submit-button a:hover
+{
+    color: rgb(174, 176, 222);
+}
+
+.bootstrap-select .dropdown-menu {
+  max-width: 100% !important;
+  overflow-x: auto;
+  word-break: break-word;
+}
+
+.reg-label .bootstrap-select {
+  width: 50% !important;
+}
+
+
+@media screen and (max-width:920px) 
+{
+    .reg-label input
+    {
+        width: 90%;
+    }
+    .reg-container
+    {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:600px) 
+{
+    .reg-label input
+    {
+        width: 100%;
+    }
+    .reg-container
+    {
+        width: 75%;
+    } 
+    .reg-label select
+    {
+        width: 50%;
+    }
+
+    .bootstrap-select .dropdown-menu 
+    {
+        max-width: 100% !important;
+        overflow-x: auto;
+        word-break: break-word;
+    }
+
+    .reg-label .bootstrap-select 
+    {
+        width: 100% !important;
+    }
+
+    
+}
+
+@media screen and (max-width:420px) 
+{
+    .reg-container
+    {
+        width: 90%;
+    }
+
+    .countrypicker
+    {
+        width: 20%;
+    }
+
+    
+
+}

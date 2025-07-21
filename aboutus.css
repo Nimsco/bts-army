@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* variables */
+:root
+{
+    --theme-color: #6D32A4;
+    --link_hover: #8e63b7;
+    --button_color: #AE41B2;
+    --title_font-size: 3rem
+}
+
+
+html
+{
+    font-size: 62.5%;
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "Lato", sans-serif;
+}
+
+.navbar
+{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    border-bottom: 2px solid;
+}
+
+.logoimg
+{
+    width: 50px;
+}
+
+.navbar ul
+{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    list-style-type: none;
+}
+
+.navbar ul li
+{
+    font-size: 1.6rem;
+    
+    font-family: "Poppins",sans-serif;
+}
+
+.navbar ul li a
+{
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+.navbar ul li a:hover
+{
+    color: #8e63b7;
+    font-size: 1.7rem;
+    text-decoration:overline;
+}
+
+.button
+{
+    background-color: var(--button_color);
+    color: white;
+    font-size: 1.6rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: 0.4s ease;
+}
+
+.button:hover
+{
+    background-color: #6d32a4;
+    cursor: pointer;
+}
+
+nav .fa-solid
+{
+    display: none;
+}
+
+.hero {
+    background-image: url(images/10_jahre_BTS.webp);
+    height: 70vh; /* 80% of the viewport height */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.hero p
+{
+    font-size: clamp(2rem,6vw,3.5rem);
+    font-family: "Poppins",sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 8rem;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: 600;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.content article
+{
+    font-size: 1.8rem;
+    width: 70%;
+    padding: 1.2rem 0;
+    line-height: 1.4;
+    word-spacing: 2.5px;
+}
+
+.members
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 6rem;
+}
+
+.members h1
+{
+    font-size: var(--title_font-size);
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    
+}
+
+.member-info
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 6rem;
+}
+
+.member-info img
+{
+    border-radius: 10px;
+}
+
+.member-personal
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-personal p
+{
+    font-size: 2.2rem;
+}
+
+
+
+.member-personal ul
+{
+    line-height: 2.4;
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+.our-website
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.our-website article
+{
+    font-size: 1.8rem;
+    width: 70%;
+    padding: 1.2rem 0;
+    line-height: 1.4;
+    word-spacing: 2.5px;
+}
+
+
+footer
+{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    padding: 3rem 0;
+    flex-wrap: wrap;
+}
+
+.policy
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.policy h1
+{
+    font-size: 2.5rem;
+}
+
+.policy ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.policy ul li
+{
+    list-style-type: none;
+    font-size: 1.6rem;
+}
+
+.policy a
+{
+    text-decoration: none;
+    color: white;
+    transition: 0.4s ease;
+}
+
+.policy a:hover
+{
+    color: var(--link_hover);
+}
+
+.design
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.design img
+{
+    width: 80px;
+}
+
+.credit
+{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    background-color: black;
+    color: white;
+    word-spacing: 3px;
+    padding: 1.5rem 0;
+}
+
+.socials
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.icons
+{
+    display: flex;
+    gap: 3rem;
+    font-size: 2rem;
+}
+
+.icons a
+{
+    color: white;
+}
+
+.member-info
+{
+    background-color: rgb(215, 219, 231);
+    padding: 2rem 4rem;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 560px; /* optional: to prevent it from getting too large on desktops */
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    top: 0;
+    left: 0;
+}
+
+.about-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+
+@media screen and (max-width:720px)
+{
+    
+    .navbar ul
+    {
+        display: none;
+    }
+
+    nav .fa-solid
+    {
+        display: inherit;
+        font-size: 1.8rem;
+    }
+
+    .content article
+    {
+        width: 85%;
+    }
+
+    .our-website article
+    {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:520px)
+{
+    .member-info
+    {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
