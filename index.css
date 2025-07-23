@@ -310,24 +310,59 @@ footer
 {
     color: white;
 }
-nav .fa-solid
+
+#switch-icon
 {
     display: none;
 }
+
+.learnmore
+{
+    display: none;
+}
+
+.learnmore-active
+{
+    display: block;
+}
+
+
+
 
 
 @media screen and (max-width:720px)
 {
     
-    .navbar ul
+    .active
+    {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        top: 0;
+        right: 0;
+        transition: 0.4s ease;
+        padding: 2rem 0;
+        background-color: rgb(219, 211, 211);
+    }
+
+    #toggle
     {
         display: none;
     }
 
-    nav .fa-solid
+    #toggle.active
     {
-        display: inherit;
+        display: flex;
+    }
+
+    #switch-icon
+    {
+        display: block;
         font-size: 1.8rem;
+        z-index: 3;
+        font-size: 2rem;
     }
 
     .info article
@@ -344,6 +379,8 @@ nav .fa-solid
     {
         gap: 4.5rem;
     }
+
+    
 }
 
 @media screen and (max-width:480px)
@@ -391,5 +428,6 @@ nav .fa-solid
         font-size: 1.5rem;
     }
 }
+
 
 
