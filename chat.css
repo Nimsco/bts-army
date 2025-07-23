@@ -90,11 +90,6 @@ body
     cursor: pointer;
 }
 
-nav .fa-solid
-{
-    display: none;
-}
-
 .container
 {
     display: flex;
@@ -109,4 +104,44 @@ nav .fa-solid
     font-weight: 600;
     padding-top: 1rem;
     word-spacing: 4px;
+}
+
+#switch-icon
+{
+    display: none;
+}
+
+@media screen and (max-width:720px)
+{
+    .active
+    {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        top: 0;
+        right: 0;
+        transition: 0.4s ease;
+        padding: 2rem 0;
+        background-color: rgb(219, 211, 211);
+    }
+
+    #toggle
+    {
+        display: none;
+    }
+
+    #toggle.active
+    {
+        display: flex;
+    }
+
+    #switch-icon
+    {
+        display: block;
+        font-size: 1.8rem;
+        z-index: 3;
+        font-size: 2rem;
+    }
 }
