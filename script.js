@@ -10,4 +10,9 @@ const learnmoreArticle= document.querySelector(".learnmore")
 
         learnButton.addEventListener("click", function(){
             learnmoreArticle.classList.toggle("learnmore-active")
+                if (learnButton.textContent.trim().toLowerCase() === "learn more") {
+        learnButton.textContent = "Learn less";
+    } else {
+        learnButton.textContent = "Learn more";
+    }
         })
