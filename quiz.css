@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*Navbar*/
+/* variables */
+:root
+{
+    --theme-color: #6D32A4;
+    --link_hover: #8e63b7;
+    --button_color: #AE41B2;
+    --title_font-size: 3rem
+}
+
+
+html
+{
+    font-size: 62.5%;
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar
+{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.logoimg
+{
+    width: 50px;
+}
+
+.navbar ul
+{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    list-style-type: none;
+}
+
+.navbar ul li
+{
+    font-size: 1.6rem;
+    font-family: "Poppins",sans-serif;
+}
+
+.navbar ul li a
+{
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+.navbar ul li a:hover
+{
+    color: #8e63b7;
+    font-size: 1.7rem;
+    text-decoration:overline;
+}
+
+.button
+{
+    background-color: var(--button_color);
+    color: white;
+    font-size: 1.6rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: 0.4s ease;
+}
+
+.button:hover
+{
+    background-color: #6d32a4;
+    cursor: pointer;
+}
+
+#switch-icon
+{
+    display: none;
+}
+
+.wrapper
+{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+    background-image: url(./images/Untitled\ design.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 80px);
+}
+
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    background-color: rgba(255, 255, 255, 0.177);
+    background-blend-mode:darken;
+    backdrop-filter: blur(10px);
+    border-top: 2px solid rgba(255, 255, 255, 0.177);
+    border-left: 2px solid rgba(255, 255, 255, 0.177);
+    border-radius: 15px;
+    padding: 3rem;
+    margin-top: 5rem;
+    color: white;
+    font-family: "Poppins",sans-serif;
+    height: fit-content;
+}
+
+#question
+{
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+#quiz
+{
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.options
+{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.start
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 5rem;
+    color: white;
+    width: 50vw;
+    background-color: rgba(255, 255, 255, 0.177);
+    background-blend-mode:darken;
+    backdrop-filter: blur(10px);
+    border-top: 2px solid rgba(255, 255, 255, 0.177);
+    border-left: 2px solid rgba(255, 255, 255, 0.177);
+    border-radius: 15px;
+    height: fit-content;
+}
+
+.start-message
+{
+    padding-bottom: 2.5rem;
+    font-size: 2.2rem;
+}
+
+#start
+{
+    padding: 8px 15px;
+    font-size: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    border: none;
+    outline: none
+}
+
+#start:hover
+{
+    background-color: rgb(153, 153, 170);
+}
+
+#select
+{
+    padding: 8px 15px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    border: none;
+    outline: none
+}
+
+#select:hover
+{
+    background-color: rgb(153, 153, 170);
+}
+
+.result
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    color: white;
+    width: 50vw;
+    background-color: rgba(255, 255, 255, 0.177);
+    background-blend-mode:darken;
+    backdrop-filter: blur(10px);
+    border-top: 2px solid rgba(255, 255, 255, 0.177);
+    border-left: 2px solid rgba(255, 255, 255, 0.177);
+    border-radius: 15px;
+    height: fit-content;
+    margin-top: 5rem;
+}
+
+#result
+{
+    font-size: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+#play-again
+{
+    padding: 8px 15px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    border: none;
+    outline: none
+}
+
+#play-again:hover
+{
+    background-color: rgb(153, 153, 170);
+}
+
+
+
+
+
+
+
+.off
+{
+    display: none !important;
+}

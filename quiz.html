@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS:Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="images/bts-logo-png_seeklogo-369588-removebg-preview.png" alt="BTS logo" class="logoimg">
+            <ul id="toggle">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="login.html"><button class="button">Login</button></a></li>
+                <li><a href="register.html"><button class="button">Register</button></a></li>
+            </ul>
+        <a href="#" id="switch-icon"><i class="fa-solid fa-bars"></i></a>
+    </nav>
+    <div class="wrapper">
+        <div class="start">
+            <p class="start-message">You have to answer 10 questions and you will be given points for each question.</p>
+            <button id="start">Start</button>
+        </div>
+        <div class="container off">
+            <div id="question">
+            </div>
+            <div id="quiz">
+                <div class="options">
+                    <input type="radio" name="option" id="opt1" value="0">
+                    <label id="lb1" for="opt1"></label>
+                </div>
+                <div class="options">
+                    <input type="radio" name="option" id="opt2" value="1">
+                    <label id="lb2" for="opt2"></label>
+                </div>
+                <div class="options">
+                    <input type="radio" name="option" id="opt3" value="2">
+                    <label id="lb3" for="opt3"></label>
+                </div>
+                <div class="options">
+                    <input type="radio" name="option" id="opt4" value="3">
+                    <label id="lb4" for="opt4"></label>
+                </div>
+                <button id="select">Select</button>
+
+            </div>
+        </div>
+            <div class="result off">
+                <p id="result"></p>
+                <button id="play-again">Play Again</button>
+            </div>
+        </div>
+    
+
+
+    <script src="quiz.js"></script>
+</body>
+</html>
